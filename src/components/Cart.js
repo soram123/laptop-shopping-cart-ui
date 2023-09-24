@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import { add, remove } from './Actions';
 
 const Cart = () => {
-    const store = useSelector(state=>state)
+    const store = useSelector(state=>state.productReducer)
     let newStore = [...store]
     let total = 0
     const dispatch = useDispatch()

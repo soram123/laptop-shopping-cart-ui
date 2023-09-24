@@ -8,7 +8,7 @@ import { add } from './Actions'
 
 
 const Products = () => {
-    const store = useSelector(state=>state)
+    const store = useSelector(state=>state.productReducer)
     const dispatch = useDispatch()
     function addCart(data){
        dispatch(add(data))

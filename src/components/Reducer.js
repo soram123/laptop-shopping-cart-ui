@@ -1,5 +1,4 @@
 const initialState = []
-let flag = 0
 
 const productReducer = (state=initialState,action)=>{
     console.log("state >>",state)

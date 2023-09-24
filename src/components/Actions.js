@@ -18,4 +18,18 @@ export const add = (data) => {
       type: 'EDIT_PRODUCT',
     };
   };
+
+  export const addAuth = (data) =>{
+    console.log("add auth",data)
+    return {
+      type: 'ADD_AUTH',
+      payload:data
+    }
+  }
+
+  export const remAuth = ()=>{
+    return {
+      type: 'REMOVE_AUTH'
+    }
+  }
   
